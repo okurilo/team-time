@@ -138,7 +138,7 @@ export const ParticipantProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   const getCurrentParticipant = () => {
-    console.log("currentParticipantIndex:", currentParticipantIndex);
+    // console.log("currentParticipantIndex:", currentParticipantIndex);
 
     if (
       currentParticipantIndex !== null &&

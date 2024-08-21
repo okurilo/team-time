@@ -16,7 +16,9 @@ const Timer: React.FC = () => {
     if (isRunning && time > 0) {
       const timerId = setInterval(() => {
         setTime(time - 1);
-        if (time <= sessionTime * 0.2) {
+        const isTimeLosting = time <= sessionTime * 0.15; // 0.15 процент от всего времени
+
+        if (isTimeLosting) {
           setTimeColor("#ff6b6b");
         } else {
           setTimeColor("#333");

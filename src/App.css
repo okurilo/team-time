@@ -87,7 +87,7 @@ body {
 
 .timer-circle h1 {
   font-size: 60px;
-  color: #333;
+  /* color: #333; */
   margin: 0;
   transition: color 0.3s ease;
 }
