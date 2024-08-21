@@ -11,6 +11,7 @@ body {
 }
 
 .app-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +24,7 @@ body {
 
   width: 100vw;
   height: 80vh;
+  min-height: 600px;
 }
 
 .setup-screen,
@@ -43,8 +45,13 @@ body {
 }
 
 .session-participants {
-  display: grid;
-  grid-template-rows: 1fr 80px;
+  /* display: grid; */
+  /* grid-template-rows: 1fr 80px; */
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .timer-screen {
@@ -139,8 +146,8 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  flex: 1;
   text-align: center;
+  width: 100%;
 }
 
 .session-button:hover {
@@ -153,9 +160,18 @@ body {
 }
 
 .new-session-button {
-  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
   box-shadow: none;
   color: #2196f3;
+
+  width: 70px;
+}
+
+.new-session-button:hover {
+  background-color: white;
 }
 
 /* Стили для инпутов и списков */
@@ -163,7 +179,7 @@ body {
   width: 100%;
   list-style-type: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
   /* background-color: #f9f9f9; */
   border-radius: 10px;
   /* padding: 10px; */
@@ -178,7 +194,7 @@ body {
   background-color: #f0f0f0;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  margin-right: 20px;
+  margin-right: 32px;
 }
 
 .participant-setup {

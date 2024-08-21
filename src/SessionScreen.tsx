@@ -18,20 +18,21 @@ const SessionScreen: React.FC<{ onNewSession: () => void }> = ({
       <Timer />
       <div className="session-participants">
         <ParticipantList />
-        <div className="button-container">
-          {/* <button
+        {/* <div className="button-container"> */}
+        {/* <button
           className="session-button next-participant-button"
           onClick={nextParticipant}
         >
           Следующий участник
         </button> */}
-          <button
-            className="session-button new-session-button"
-            onClick={handleNewSession}
-          >
-            Новая сессия
-          </button>
-        </div>
+        <button
+          style={{ fontSize: 34 }}
+          className="session-button new-session-button"
+          onClick={handleNewSession}
+        >
+          ✖
+        </button>
+        {/* </div> */}
       </div>
     </div>
   );

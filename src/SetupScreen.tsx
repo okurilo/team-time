@@ -39,9 +39,8 @@ const SetupScreen: React.FC<{ onStartSession: () => void }> = ({
           min={30} // Минимальное время - 30 секунд
         />
       </div>
+      <h2>Участники</h2>
       <div className="participant-setup">
-        <h2>Участники</h2>
-
         {participants.length > 0 ? (
           <ul className="participant-list">
             {participants.map((participant) => (
